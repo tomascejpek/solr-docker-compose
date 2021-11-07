@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  solr:
+    image: solr:8
+    container_name: solr
+    volumes:
+      - /home/tomas/solr-home/:/var/solr/data/:Z
+    ports:
+      - "8983:8983"
+      - "127.0.0.1:7983:7983"
+    restart: always
