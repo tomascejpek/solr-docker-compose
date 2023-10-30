@@ -2,7 +2,7 @@ version: '2'
 
 services:
   solr:
-    image: solr:8
+    image: solr:8.11.1-slim
     container_name: solr
     volumes:
       - /home/tomas/solr-home/:/var/solr/data/:Z
