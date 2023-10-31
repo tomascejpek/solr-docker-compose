@@ -188,6 +188,7 @@
   <dynamicField name="random_*" type="random"/>
   <dynamicField name="*_txt_en" type="text_en" indexed="true" stored="true"/>
   <dynamicField name="*_txt_cz" type="text_cz" indexed="true" stored="true"/>
+  <dynamicField name="*_txt_cz_mv" type="text_cz" multiValued="true" indexed="true" stored="true"/>
   <dynamicField name="*_point" type="point" indexed="true" stored="true"/>
   <dynamicField name="*_srpt" type="location_rpt" indexed="true" stored="true"/>
   <dynamicField name="attr_*" type="text_general" multiValued="true" indexed="true" stored="true"/>
@@ -206,6 +207,7 @@
   <dynamicField name="*_dt" type="pdate" indexed="true" stored="true"/>
   <dynamicField name="*_i" type="pint" indexed="true" stored="true"/>
   <dynamicField name="*_s" type="string" indexed="true" stored="true"/>
+  <dynamicField name="*_s_mv" type="string" indexed="true" multiValued="true" stored="true"/>
   <dynamicField name="*_l" type="plong" indexed="true" stored="true"/>
   <dynamicField name="*_t" type="text_general" multiValued="false" indexed="true" stored="true"/>
   <dynamicField name="*_b" type="boolean" indexed="true" stored="true"/>
