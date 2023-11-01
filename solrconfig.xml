@@ -1304,6 +1304,15 @@
        <str name="defType">edismax</str>
        <str name="qf">
           title_search^10
+          city_search^2
+          district_search^2
+          country_search
+          type_search
+          year_search
+          owner_search
+          cat_number_search^10
+          alternative_title_search^10
+          external_id_search
        </str>
        
        	<str name="fl">*,score</str>
