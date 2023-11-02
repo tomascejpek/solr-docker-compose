@@ -1300,8 +1300,8 @@
     <requestHandler name="/my_handler" class="solr.SearchHandler">
   <lst name="defaults">
     <int name="rows">20</int>
-     <!-- Query settings -->
-       <str name="defType">edismax</str>
+    <!-- Query settings -->
+    <str name="defType">edismax</str>
        <str name="qf">
           title_search^10
           city_search^2
@@ -1314,8 +1314,16 @@
           alternative_title_search^10
           external_id_search
        </str>
-       
-       	<str name="fl">*,score</str>
+       <str name="pf">
+          title_search^10
+          city_search^2
+          district_search^2
+          country_search
+          owner_search
+          cat_number_search^10
+          alternative_title_search^10
+       </str>
+       <str name="fl">id,score</str>
   </lst>
 </requestHandler>
 </config>
