@@ -1310,7 +1310,7 @@
           type_search
           year_search
           owner_search
-          cat_number_search^10
+          cat_number_txt^10
           alternative_title_search^10
           external_id_search
        </str>
@@ -1320,7 +1320,7 @@
           district_search^2
           country_search
           owner_search
-          cat_number_search^10
+          cat_number_txth^10
           alternative_title_search^10
        </str>
        <str name="fl">id,score</str>
