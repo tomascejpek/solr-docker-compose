@@ -1297,7 +1297,7 @@
      <transformer name="qecBooster" class="org.apache.solr.response.transform.EditorialMarkerFactory" />
     -->
     
-    <requestHandler name="/my_handler" class="solr.SearchHandler">
+    <requestHandler name="/browse" class="solr.SearchHandler">
   <lst name="defaults">
     <int name="rows">20</int>
     <!-- Query settings -->
