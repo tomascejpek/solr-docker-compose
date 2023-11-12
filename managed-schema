@@ -216,6 +216,8 @@
   <dynamicField name="*_f" type="pfloat" indexed="true" stored="true"/>
   <dynamicField name="*_d" type="pdouble" indexed="true" stored="true"/>
   <dynamicField name="*_p" type="location" indexed="true" stored="true"/>
+  <dynamicField name="*_display" type="string" indexed="false" stored="true"/>
+  <dynamicField name="*_display_mv" type="string" multiValued="true" indexed="false" stored="true"/>
   <copyField source="delete" dest="delete_str" maxChars="256"/>
   <!-- Custom copyFields -->
   <copyField source="city_s" dest="city_search"/>

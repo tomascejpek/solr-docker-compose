@@ -1323,7 +1323,7 @@
           cat_number_txth^10
           alternative_title_search^10
        </str>
-       <str name="fl">id,score</str>
+       <str name="fl">*,score</str>
   </lst>
 </requestHandler>
 </config>
