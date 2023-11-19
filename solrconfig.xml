@@ -1302,28 +1302,33 @@
     <int name="rows">20</int>
     <!-- Query settings -->
     <str name="defType">edismax</str>
-       <str name="qf">
-          title_search^10
-          city_search^2
-          district_search^2
-          country_search
-          type_search
-          year_search
-          owner_search
-          cat_number_txt^10
-          alternative_title_search^10
-          external_id_search
-       </str>
-       <str name="pf">
-          title_search^10
-          city_search^2
-          district_search^2
-          country_search
-          owner_search
-          cat_number_txth^10
-          alternative_title_search^10
-       </str>
-       <str name="fl">*,score</str>
+    <str name="qf">
+      title_search^10
+      city_search^2
+      district_search^2
+      country_search
+      type_search
+      year_search
+      owner_search
+      cat_number_txt^10
+      alternative_title_search^10
+      external_id_search
+    </str>
+    <str name="pf">
+      title_search^10
+      city_search^2
+      district_search^2
+      country_search
+      owner_search
+      cat_number_txth^10
+      alternative_title_search^10
+    </str>
+    <str name="fl">*,score</str>
+    <str name="facet">on</str>
+    <str name="facet.field">format_s</str>
+    <str name="facet.field">country_s_mv</str>
+    <str name="facet.field">district_s</str>
+    <str name="facet.mincount">1</str>
   </lst>
 </requestHandler>
 </config>
