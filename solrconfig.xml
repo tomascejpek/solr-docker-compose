@@ -1313,6 +1313,8 @@
       cat_number_txt^10
       alternative_title_search^10
       external_id_search
+      beer_style_search
+      epm_search
     </str>
     <str name="pf">
       title_search^10
@@ -1320,8 +1322,9 @@
       district_search^2
       country_search
       owner_search
-      cat_number_txth^10
+      cat_number_txt^10
       alternative_title_search^10
+      beer_style_search
     </str>
     <str name="fl">*,score</str>
     <str name="facet">on</str>
