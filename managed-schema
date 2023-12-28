@@ -211,6 +211,7 @@
   <dynamicField name="*_i" type="pint" indexed="true" stored="true"/>
   <dynamicField name="*_s" type="string" indexed="true" stored="true"/>
   <dynamicField name="*_l" type="plong" indexed="true" stored="true"/>
+  <dynamicField name="*_l_mv" type="plong" multiValued="true" indexed="true" stored="true"/>
   <dynamicField name="*_t" type="text_general" multiValued="false" indexed="true" stored="true"/>
   <dynamicField name="*_b" type="boolean" indexed="true" stored="true"/>
   <dynamicField name="*_f" type="pfloat" indexed="true" stored="true"/>
@@ -220,8 +221,10 @@
   <dynamicField name="*_display_mv" type="string" multiValued="true" indexed="false" stored="true"/>
   <copyField source="delete" dest="delete_str" maxChars="256"/>
   <!-- Custom copyFields -->
-  <copyField source="city_s" dest="city_search"/>
-  <copyField source="district_s" dest="district_search"/>
+  <copyField source="city_s_mv" dest="city_search"/>
+  <copyField source="district_s_mv" dest="district_search"/>
   <copyField source="owner_s" dest="owner_search"/>
+  <copyField source="founded_l_mv" dest="year_search"/>
+  <copyField source="closed_l_mv" dest="year_search"/>
   <copyField source="id" dest="id_long"/>
 </schema>
