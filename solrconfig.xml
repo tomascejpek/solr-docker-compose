@@ -1304,33 +1304,35 @@
     <str name="defType">edismax</str>
     <str name="qf">
       title_search^10
-      city_search^2
-      district_search^2
-      country_search
-      type_search
-      year_search
-      owner_search
+      city_search^4
+      district_search^3
+      country_search^1
+      type_search^1
+      year_search^1
+      owner_search^1
       cat_number_txt^10
       alternative_title_search^10
-      external_id_search
-      beer_style_search
-      epm_search
+      external_id_search^1
+      beer_style_search^1
+      epm_search^1
+      fulltext_search
     </str>
     <str name="pf">
       title_search^10
-      city_search^2
-      district_search^2
-      country_search
-      owner_search
+      city_search^4
+      district_search^3
+      country_search^1
+      owner_search^1
       cat_number_txt^10
       alternative_title_search^10
-      beer_style_search
+      beer_style_search^1
+      fulltext_search
     </str>
     <str name="fl">*,score</str>
     <str name="facet">on</str>
     <str name="facet.field">format_s</str>
     <str name="facet.field">country_s_mv</str>
-    <str name="facet.field">district_s</str>
+    <str name="facet.field">district_s_mv</str>
     <str name="facet.mincount">1</str>
   </lst>
 </requestHandler>
