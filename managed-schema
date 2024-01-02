@@ -171,6 +171,19 @@
       <filter class="solr.LowerCaseFilterFactory"/>
     </analyzer>
   </fieldType>
+  <fieldType name="text_autocomplete" class="solr.TextField" positionIncrementGap="100">
+    <analyzer type="index">
+      <tokenizer class="solr.StandardTokenizerFactory"/>
+      <filter class="solr.ICUFoldingFilterFactory"/>
+      <filter class="solr.LowerCaseFilterFactory"/>
+      <filter class="solr.EdgeNGramFilterFactory" minGramSize="1" maxGramSize="25"/>
+    </analyzer>
+    <analyzer type="query">
+      <tokenizer class="solr.StandardTokenizerFactory"/>
+      <filter class="solr.ICUFoldingFilterFactory"/>
+      <filter class="solr.LowerCaseFilterFactory"/>
+    </analyzer>
+  </fieldType>
   <field name="_nest_path_" type="_nest_path_"/>
   <field name="_root_" type="string" docValues="false" indexed="true" stored="false"/>
   <field name="_text_" type="text_general" multiValued="true" indexed="true" stored="false"/>
@@ -219,6 +232,7 @@
   <dynamicField name="*_p" type="location" indexed="true" stored="true"/>
   <dynamicField name="*_display" type="string" indexed="false" stored="true"/>
   <dynamicField name="*_display_mv" type="string" multiValued="true" indexed="false" stored="true"/>
+  <dynamicField name="*_autocomplete" type="text_autocomplete" multiValued="true" indexed="true" stored="true"/>
   <copyField source="delete" dest="delete_str" maxChars="256"/>
   <!-- Custom copyFields -->
   <copyField source="city_s_mv" dest="city_search"/>
@@ -227,4 +241,5 @@
   <copyField source="founded_l_mv" dest="year_search"/>
   <copyField source="closed_l_mv" dest="year_search"/>
   <copyField source="id" dest="id_long"/>
+  <copyField source="title_s" dest="all_autocomplete"/>
 </schema>
